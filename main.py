@@ -145,7 +145,7 @@ async def deleteprofile(ctx):
 @bot.slash_command(guild_ids=gids)
 async def dadjoke(ctx):
   embed=discord.Embed(title=requests.request("GET", "https://icanhazdadjoke.com/", headers={'Accept':'text/plain'}).text,color=0x509ef2)
-  embed.set_footer(text="Powered by: icanhazdadjoke.com")
+  embed.set_footer(text="Powered by icanhazdadjoke.com")
   await ctx.respond(embed=embed)
 
   #Cat Pictures
